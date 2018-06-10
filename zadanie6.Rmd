@@ -2,8 +2,8 @@
 title: "Dark"
 author: "Kamila Misiołek"
 date: "10 czerwca 2018"
-output:
-   html_document:
+output: 
+  html_document:
     df_print: paged
     theme: default
     highlight: default
@@ -11,12 +11,20 @@ output:
     
 ---
 
+```{r include=FALSE}
 
-# Dark (serial telewizyjny)
+library(tidyverse)
+
+library(ggplot2)
+
+```
+
+
+## Dark (serial telewizyjny)
 
 "Dark" to niezwykła saga rozgrywająca się we współczesnych Niemczech. Zaginięcie dwojga małych dzieci wydobywa na światło dzienne skrywane sekrety czterech rodzin i zaburzone relacje pomiędzy ich członkami. Wypadki przedstawione w dziesięciu godzinnych odcinkach przybierają nadprzyrodzony obrót niepozostający bez związku z wydarzeniami, które miały miejsce w miasteczku w 1986 r.
 
-<http://www.filmweb.pl/serial/Dark-2017-771383/descs>
+<http://www.filmweb.pl/serial/Dark-2017-771383>
 
 # Plakat
 
@@ -64,13 +72,10 @@ output:
 
 ## KONIEC
 
-library(tidyverse)
-
-library(ggplot2)
 
 ggplot(data = mpg) + 
   geom_histogram(mapping = aes(displ), binwidth = 0.2 ) +
   labs(title = "Rozkład pojemności silnika samochodów", x = "pojemność silnika", y = "liczba")
   
-
 ---
+  
