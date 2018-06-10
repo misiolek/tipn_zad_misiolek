@@ -1,8 +1,8 @@
 ---
-title: "DARK"
+title: "Dark"
 author: "Kamila Misiołek"
 date: "10 czerwca 2018"
-output:
+output: 
   html_document:
     df_print: paged
     theme: default
@@ -17,7 +17,6 @@ output:
 library(tidyverse)
 
 library(ggplot2)
-
 
 ```
 
@@ -74,9 +73,9 @@ library(ggplot2)
 
 ## KONIEC
 
+ggplot(data = mpg, aes(x = class, y = displ)) +
+  geom_boxplot() +
+  coord_flip() +
+  labs(title = "Pojemność silnika w klasach", x = "Klasa", y = "Pojemność silnika")
 
-ggplot(data = mpg) + 
-  geom_histogram(mapping = aes(displ), binwidth = 0.2 ) +
-  labs(title = "Rozkład pojemności silnika samochodów", x = "pojemność silnika", y = "liczba")
-  
-  
+---
