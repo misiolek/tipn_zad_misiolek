@@ -2,20 +2,20 @@
 title: "Dark"
 author: "Kamila Misiołek"
 date: "10 czerwca 2018"
-output: 
-  html_document:
+output:
+html_document:
     df_print: paged
     theme: default
     highlight: default
-    
-    
 ---
 
 ```{r include=FALSE}
 
+
 library(tidyverse)
 
 library(ggplot2)
+
 
 ```
 
